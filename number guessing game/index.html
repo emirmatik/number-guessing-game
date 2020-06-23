@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>sayı tahmin et !!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Soğuk Sıcak</h1>
+      <hr />
+      <form>
+        <ul class="prev-guesses"></ul>
+        <input id="guess-input" type="number" placeholder="Tahmin et!" />
+        <button class="guess-btn">Tahmin</button>
+      </form>
+      <div class="result"><h5 class="result-text"></h5></div>
+      <div class="guessList">
+        <h5 class="guess-attempt">1. Tahmin</h5>
+      </div>
+      <button class="reset-btn">Tekrar Oyna</button>
+      <button class="info-btn">Nasıl Oynanır ?</button>
+    </div>
+    <div class="footer">Created by <b style="margin-left: 5px;">Emir</b></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.1/dist/sweetalert2.all.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

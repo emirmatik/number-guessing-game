@@ -1,0 +1,104 @@
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guess-btn {
+  background: #3f51b5;
+  color: white !important;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+.guess-btn:hover {
+  background: #5a6cd4;
+}
+#guess-input {
+  padding: 5px !important;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.prev-guesses {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.prev-guesses li {
+  font-size: 1.7rem;
+  margin-right: 1.5rem;
+}
+
+.reset-btn {
+  background: #f50057;
+  color: white !important;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+.reset-btn:hover {
+  background: #cf225f;
+}
+
+.title-class {
+  font-size: 3rem !important;
+  padding: 2rem 0 !important;
+}
+.content-class {
+  font-size: 1.5rem !important;
+}
+.content-class li {
+  padding: 1rem !important;
+}
+.confirmButton {
+  background: greenyellow !important;
+}
+.popup-class {
+  min-width: 25% !important;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(240, 240, 240);
+  color: rgb(104, 104, 104);
+  font-weight: 300 !important;
+  font-size: 1.2rem;
+  border: none;
+}
+@media screen and (max-width: 750px) {
+  body {
+    overflow: visible;
+  }
+  .container {
+    min-width: 80%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
